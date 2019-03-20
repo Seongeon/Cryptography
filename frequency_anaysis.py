@@ -17,7 +17,7 @@ def frequency_analysis(cipher_text):
 #plot the histogram of the letter_frequency pairs
 def plot_distribution(letter_frequency):
     centers = range(len(LETTERS))
-    plt.bar(centers, letter_frequency.values(), align='center', tick_label=letter_frequency.keys())
+    plt.bar(centers, letter_frequency.values(),align='center', tick_label=list(letter_frequency.keys()))
     plt.xlim([0, len(LETTERS)-1])
     plt.show()
 
