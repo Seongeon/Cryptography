@@ -1,5 +1,5 @@
 alphabet = ' ABCDEFGHIZKLMNOPQRSTUVWXYZ'
-key = 5   #i use it for shifting
+key = 9   #i use it for shifting
 def caesar_encrypt(plain_text):
     #the encrypted message
     cipher_text = ''
@@ -24,7 +24,7 @@ def caesar_decrypt(cipher_text):
     return plain_text
 
 if __name__ == "__main__":
-    encrypted = caesar_encrypt("This is a lame example")
+    encrypted = caesar_encrypt("Georg Wilhelm Friedrich Hegel was a German philosopher and an important figure of German idealism. He achieved wide recognition in his day and—while primarily influential within the continental tradition of philosophy—has become increasingly influential in the analytic tradition as well. ")
     print(encrypted)
     decrypted = caesar_decrypt(encrypted)
     print(decrypted)
