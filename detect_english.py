@@ -3,7 +3,7 @@ ALPHABET = ' ABCDEFGHIJKLMNOPQRSTUVWXYZ'
 ENGLISH_WORDS = []
 
 def get_data():
-    dictionary = open("/Users/Kevin-S-Hong/desktop/cryptography/cryptography2/english_words.txt", "r")
+    dictionary = open("english_words.txt", "r")
     #intialize the english words list with the words present in the file
     #every word is in a distinct line
     for word in dictionary.read().split('\n'):
